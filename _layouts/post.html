@@ -11,7 +11,7 @@ post_class: post-template
     <div class="row">
 
         <!-- Post Share -->
-        <div class="col-md-2 pl-0">
+        <div class="mr-5 pl-0">
             {% include share.html %}
         </div>
 
@@ -20,6 +20,9 @@ post_class: post-template
 
         <div class="col-md-9 flex-first flex-md-unordered">
             <div class="mainheading">
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
 
                 <!-- Author Box -->
                 {% if page.author %}
@@ -37,9 +40,6 @@ post_class: post-template
                     </div>
                 </div>
                 {% endif %}
-
-                <!-- Post Title -->
-                <h1 class="posttitle">{{ page.title }}</h1>
 
             </div>
 
